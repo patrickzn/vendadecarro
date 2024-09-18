@@ -68,6 +68,7 @@ p {
     margin-left: 600px;
    margin-top: -220px; 
    }
+   
 
 nav {
     width: 100%;
@@ -80,7 +81,7 @@ nav {
    justify-content: space-around;
    font-family: 'poppins', sans-serif;
    margin-top: 0px;
-   border-bottom: 2px solid #6e06bd;
+   border-bottom: 2px solid #590f9e;
     }
 
     .menu nav a::after{
@@ -197,7 +198,7 @@ section.sobre .flex{
 .txt-sobre{
     
     margin-left: 400px;
-    margin-top: -400px;
+    margin-top: -550px;
     color: #fff;
     width: 600px;
  
@@ -255,8 +256,10 @@ button:hover, form .btn-enviar input:hover{
 }
 
 section.portfolio{
-    padding:90px 5%;
+    padding: 80px 4%;
     box-shadow:0 0 40px 10px #ffffff3e;
+    display: flex;
+    
 }
 
 section.portfolio .flex{
@@ -362,6 +365,7 @@ footer .flex{
 
 footer .line-footer{
     padding: 40px 0;
+    
 }
 
 .borda{
@@ -371,10 +375,13 @@ footer .line-footer{
 footer .line-footer p i{
     color: rgb(24, 17, 222);
     font-size: 22px;
+     align-items: center;
+    display: flex;
 }
 
 footer .line-footer p a{
     color: #fff;
+   
 }
 
 .nav-itens{
@@ -384,41 +391,6 @@ footer .line-footer p a{
     font-weight: 800px;
     font-size: 25px;
     align-items: center;
-}
-
-.trilho{
-    width: 80px;
-    height: 30px;
-    background-color: #4d4d4d;
-    border-radius: 150px;
-    position: absolute;
-    cursor: pointer;
-   margin-top: 110px;
-  margin-left: 970px;
-}
-
-.trilho .indicador{
-    width: 30px;
-    height: 30px;
-    background-color:  #13131f;
-    border-radius: 50%;
-    transform: scale(.9);
-    position: absolute;
-    left: 0;
-    transition: .5s;
-}
-
-.trilho.dark{
-    background-color: #4d4d4d;
-}
-
-.trilho.dark .indicador{
-    left: 50px;
-    background-color:   #13131f;
-}
-
-body.dark{
-    background-color: #a8a4a4;
 }
 
 .atuacao, .h2, .h3{
@@ -446,3 +418,69 @@ margin-bottom: 80px;
     margin-top: -1700px;
     margin-left: 1100px;
 }
+
+
+@media (max-width: 768px) {
+
+    .ola {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+   .flex{
+    flex-direction: column-reverse;
+   }
+    .actions {
+        margin: 0 auto;
+    }
+
+    .especialidades .especialidades-box {
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .txt-sobre {
+        margin: 0;
+        width: 100%;
+    }
+    
+    .nav-itens{ 
+        display: none; }
+
+    section.portfolio {
+        padding: -80px 8%;
+    }
+    .img-port{
+        width:300px;
+        height: 320px;
+        background-size: cover;
+        background-position: 100% 0%;
+        transition: 8s;
+        cursor: pointer;
+        border-radius: 20px;
+        position: relative;
+        margin: 0 auto;
+    }
+}
+
+footer {
+    padding: 40px 20px;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+.footer .line-footer p i {
+    color: rgb(24, 17, 222);
+    font-size: 20px;
+}
+
+/* Ajuste nos botões */
+.btn-social button {
+    width: 50px;
+    height: 50px;
+}
+
+form .btn-enviar input {
+    width: 100%;
+    padding: 15px;
+}
+
